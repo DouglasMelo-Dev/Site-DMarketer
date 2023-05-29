@@ -1,0 +1,97 @@
+.sobre__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.sobre__titulo{
+    margin: 100px 0 10px 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 57px;
+    letter-spacing: .2px;
+    color: var(--cor-letra-branca);
+}
+
+.sobre__paragrafo{
+    font-size: .875rem;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: var(--cor-letra-branca);
+    margin-bottom: 45px;
+}
+
+/* Estilizando os cards */
+
+.sobre__cardsContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.875rem;
+}
+
+.card{
+    width: 328px;
+    height: 220px;
+    background-color: var(--cor-background-cards);
+    border: none;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.card__titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 35px 0 15px 0;
+    gap: 10px;
+    color: var(--cor-letra-escura);
+}
+
+.card__paragrafo{
+    color: var(--cor-paragrafo-cards);
+    font-weight: 500;
+    font-style: .875rem;
+    margin: 15px 40px 35px 40px;
+    text-align: justify;
+    
+
+}
+
+
+/* @media */
+
+@media (max-width: 1200px) {
+    .sobre__cardsContainer{
+        grid-template-columns: 1fr 1fr;
+        
+    }
+    
+}
+
+@media (max-width: 740px) {
+    .sobre__cardsContainer{
+        grid-template-columns: 1fr;
+    }
+
+    .sobre__titulo{
+        width: 308px;
+        line-height: 2rem;
+    }
+    
+    .sobre__paragrafo{
+        width: 305px;
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+}
+
+

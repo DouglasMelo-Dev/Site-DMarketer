@@ -1,0 +1,15 @@
+.segundo__rodape{
+    background-color: var(--cor-background-verde);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.segundo__rodape h6{
+    color: var(--cor-letra-branca);
+    font-size: .875rem;
+    font-weight: 600;
+    line-height: 24px;
+}
+

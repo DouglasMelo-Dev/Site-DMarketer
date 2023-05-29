@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Montserrat', sans-serif;
+     
+}
+
+:root{
+    --cor-background: #252B42;
+    --cor-letra-branca: #FFFFFF;
+    --cor-letra-laranja: #FFA62B;
+    --cor-letra-escura: #252B42;
+    --cor-btn-laranja: #FFA62B;
+    --cor-btn-hover: #e19325;
+    --cor-icones-azulClaro: #00A0C1;
+    --cor-background-consultingArea: #FAFAFA;
+    --cor-background-cards: #FAFAFA;
+    --cor-paragrafo-cards: #737373;
+    --cor-borda-formulario: #BDBDBD;
+    --cor-background-formulario: #BDBDBD;
+    --cor-background-verde: #16697A;
+}
+
+body{
+    background-color: var(--cor-background);
+    
+}

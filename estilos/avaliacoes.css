@@ -1,0 +1,121 @@
+.avaliacoes__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.avaliacoes__titulo{
+    margin: 100px 0 10px 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 57px;
+    letter-spacing: .2px;
+    color: var(--cor-letra-branca);
+}
+
+.avaliacoes__paragrafo{
+    font-size: .875rem;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: var(--cor-letra-branca);
+    margin-bottom: 45px;
+}
+
+/* Estilizando os cards */
+
+.avaliacoes__cardsContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.875rem;
+}
+
+.card__aval{
+    width: 328px;
+    border-radius: 5px;
+    background-color: var(--cor-background-cards);
+    border: none;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 35px;
+}
+
+.card__avalStars{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 5px 0 15px 0;
+    gap: 10px;
+    color: var(--cor-letra-escura);
+}
+
+.card__avalParagrafo{
+    display: flex;
+    justify-content: flex-start;
+    color: var(--cor-paragrafo-cards);
+    font-weight: 500;
+    font-style: .875rem;
+    text-align: justify;
+}
+
+.avaliador{
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.dados__avaliador{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+
+.dados__avaliador a{
+    color: var(--cor-letra-laranja);
+    font-weight: 600;
+    font-size: .875rem;
+}
+
+.dados__avaliador h6{
+    color: var(--cor-letra-escura);
+    font-weight: 600;
+    font-size: .875rem;
+}
+
+/* @media */
+
+@media (max-width: 1200px) {
+    .avaliacoes__cardsContainer{
+        grid-template-columns: 1fr 1fr;
+        
+    }
+    
+}
+
+@media (max-width: 740px) {
+    .avaliacoes__cardsContainer{
+        grid-template-columns: 1fr;
+    }
+
+    .avaliacoes__titulo{
+        width: 308px;
+        line-height: 2rem;
+    }
+    
+    .avaliacoes__paragrafo{
+        width: 305px;
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+}
+

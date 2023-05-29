@@ -1,0 +1,128 @@
+.agendamento__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 821px;
+    background-image: url(/imagens/imagem-agendamento.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 100px;
+    
+}
+
+
+
+.form__box{
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    
+}
+
+.agendamento__cabecalho{
+    padding: 32px 20px 0 32px;
+}
+
+.agendamento__subtitulo,
+.agendamento__titulo{
+    color: var(--cor-letra-branca);
+    
+}
+
+.agendamento__subtitulo{
+    font-size: 1rem;
+    font-weight: 700;
+}
+.agendamento__titulo{
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.form__box form{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 32px;
+
+}
+
+.form__box input,
+.form__box textarea{
+    width: calc(50% - 8px);
+    height: 48px;
+    border-radius: 8px;
+    padding-left: 16px;
+    margin-bottom: 16px;
+    font-size: 1rem;
+    font-weight: 500;
+    outline: none;
+    color: var(--cor-letra-escura);
+    border: 1px solid var(--cor-borda-formulario);
+    background-color: #FAFAFA;
+}
+
+.form__box input:first-child{
+    margin-right: 16px;
+}
+
+.form__box input[name=subject]{
+    width: 100%;
+}
+
+.form__box textarea{
+    width: 100%;
+    height: 180px;
+    padding: 10px;
+    
+}
+
+.form__box button{
+    display: block;
+    border: none;
+    outline: none;
+    width: 218px;
+    height: 58px;
+    background-color: var(--cor-btn-laranja);
+    color: var(--cor-letra-branca);
+    font-size: .875rem;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.form__box button:hover{
+    background-color: var(--cor-btn-hover);
+}
+
+/* @media */
+
+@media (max-width: 1200px) {
+    .form input::placeholder,
+    .form textarea::placeholder{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 740px) {
+    .form input::placeholder,
+    .form textarea::placeholder{
+        font-size: .7rem;
+    }  
+
+    .form__box input,
+    .form__box textarea{
+        width: 100%;
+    }
+
+    .form__box input:first-child{
+        margin-right: 0;
+    }
+
+    .form__box button{
+        width: 100%;    
+    }
+
+}

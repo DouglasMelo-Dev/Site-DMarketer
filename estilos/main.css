@@ -1,0 +1,92 @@
+
+
+.main__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 576px;
+    padding: 0 20px;
+}
+
+.main__conteudo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.main__titulo{
+    font-size: 3.625rem;
+    font-weight: 800;
+    color: var(--cor-letra-branca);
+    line-height: 80px;
+    margin-top: 2.5rem;
+}
+
+.main__paragrafo{
+    font-size: 1.25rem;
+    line-height: 20px;
+    font-weight: 500;
+    color: var(--cor-letra-branca);
+    letter-spacing: .2px;
+    margin-top: 2.5rem;
+    line-height: 30px;
+}
+
+.main__buttons{
+    margin-top: 2.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.btn__cotacao{
+    padding: 15px 36px;
+    background-color: var(--cor-btn-laranja);
+    color: var(--cor-letra-branca);
+    border-radius: 37px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 700;
+    transition: .3s ease-in-out;
+}
+.btn__cotacao:hover{
+    background-color: var(--cor-btn-hover);
+}
+
+.btn__saibaMais{
+    padding: 15px 36px;
+    background-color: transparent;
+    border: 1px solid var(--cor-letra-branca);
+    border-radius: 37px;
+    cursor: pointer;
+    color: var(--cor-letra-branca);
+    font-size: 1rem;
+    font-weight: 700;
+}
+.btn__saibaMais:hover{
+    background-color: #ffffff32;
+}
+
+
+/* @media */
+
+@media (max-width: 1200px) {
+    .sobre__cardsContainer{
+        grid-template-columns: 1fr 1fr;        
+    }
+}
+
+@media (max-width: 740px) {
+    .main__titulo{
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: var(--cor-letra-branca);
+        line-height: 80px;
+        margin-top: 2.5rem;
+    }   
+}
